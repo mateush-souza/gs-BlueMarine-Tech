@@ -7,9 +7,50 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <script src="assets/js/menu.js"></script>
     <title>BlueMarine Tech</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- menu desktop -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Brindes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Membros</a></li>
+                </ul>
+            </div>
+            
+            <!-- menu mobile -->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img 
+                        class="icon" 
+                        src="assets/images/menu.svg" 
+                        alt="Ícone de menu Hamburguer"
+                        width="36px"
+                        height="36px"
+                        loading="lazy"
+                    />
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Brindes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Membros</a></li>
+            </ul>
+        </div>
+    </header>
 </body>
 </html>
