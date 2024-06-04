@@ -1,0 +1,148 @@
+/* Css utilizado na Home */
+.home {
+    padding: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container-home {
+    max-width: 744px;
+}
+
+.title-home {
+    color: var(--primary-color);
+    margin-bottom: 38px;
+}
+
+.auxiliary-text-home {
+    color: var(--primary-color);
+    margin-bottom: 38px;
+}
+
+.description-home {
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 66px;
+}
+
+.btn-home {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--body);
+    color: var(--secondary-color);
+    font-weight: 600;
+    align-items: center;
+    max-width: 350px;
+    height: 66px;
+    cursor: pointer;
+    border: 3px solid var(--secondary-color);
+    background: none;
+    border-radius: 10px;
+    
+}
+
+.img-home {
+    max-width: 700px;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        margin-top: 10rem;
+        padding: 35px;
+    }
+    .text-container-home {
+        width: auto;
+    }
+    .image-container-home {
+        display: none;
+    }
+
+}
+
+
+/* Css utilizado na sessão saiba mais */
+
+.learn-more {
+    display: flex;
+    padding: 77px;
+    margin-top: 180px;
+    height: 950px;
+    background-color: var(--secondary-color);
+}
+
+.container-learn-more {
+    display: flex;
+    align-items: center;
+}
+
+.image-container-learn-more {
+    width: 50%;
+}
+
+.img-learn-more {
+    width: 90%;
+}
+
+.text-container-learn-more {
+    padding: 25px;
+    width: 50%;
+}
+
+.title-learn-more {
+    color: var(--light-color);
+    margin-bottom: 60px;
+
+}
+
+.description-learn-more {
+    color: var(--light-color);
+    letter-spacing: 14%;
+    margin-bottom: 31px;
+}
+
+.btn-learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    max-width: 200px;
+    height: 50px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .learn-more {
+        padding: 10px;
+    }
+
+    .container-learn-more {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-learn-more {
+        height: auto;
+    }
+
+    .text-container-learn-more {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 699px) {
+    .learn-more {
+        height: auto;
+    }
+    .image-container-learn-more {
+        display: none;
+    }
+}
+
+

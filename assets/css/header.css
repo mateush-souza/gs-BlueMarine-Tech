@@ -1,0 +1,122 @@
+.nav-bar {
+    width: 100%;
+    padding: 2.5rem 2rem;
+}
+
+.logo {
+    font-size: 18px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #000;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    transition: ease-in-out 300ms;
+    color: var(--primary-color);
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--secondary-color);
+        padding: 1.5rem 4rem;
+    }
+
+    .logo {
+        color: var(--light-color);
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        width: 100%;
+        top: 87px;
+        z-index: 99;
+    }
+
+    .mobile-menu ul {
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .nav-link {
+        color: var(--light-color);
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}
