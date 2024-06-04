@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/variables.css">
     <script src="assets/js/menu.js"></script>
     <title>BlueMarine Tech</title>
 </head>
@@ -16,11 +16,11 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <h1>Logo</h1>
+                <h3>LOGO</h3>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Brindes</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
@@ -44,7 +44,7 @@
         </nav>
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Brindes</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
@@ -52,5 +52,58 @@
             </ul>
         </div>
     </header>
+    <main>
+        <section class="home">
+            <div class="text-container-home">
+                <h1 class="title-home">Junte-se à Aventura do <span class="color-orange">Planeta Limpo!</span></h1>
+                <h3 class="auxiliary-text-home">Participe da Missão: <span class="color-orange">Coleta de Lixo nas Praias!</span></h3>
+                <p class="description-home">Hey, pequenos heróis! Que tal salvar nossas praias e ganhar prêmios incríveis ao  mesmo tempo?</p>
+                <a type="button" class="btn-home">
+                    Quero participar!
+                    <img 
+                        src="./assets/images/star-home.svg" 
+                        alt="Ícone de estrela"
+                        width="35px"
+                        height="30px"
+                        loading="lazy"
+                    />
+                </a>
+            </div>
+            <div class="image-container-home">
+                <img
+                    class="img-home"
+                    src="./assets/images/boy-home.png" 
+                    alt="Garoto segurando um controle com animais marinhos em volta dele"
+                    width="600px"
+                    height="700px"
+                    loading="lazy"
+                />
+            </div>
+        </section>
+
+        <section id="about-us" class="learn-more">
+            <div class="container-learn-more">
+                <div class="image-container-learn-more">
+                    <img
+                        class="img-learn-more"
+                        src="./assets/images/kids-learn-more.png" 
+                        alt="crianças correndo na praia"
+                        width="724px"
+                        height="696px"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="text-container-learn-more">
+                    <h2 class="title-learn-more">Transforme a Limpeza das Praias em Uma <span class="color-cian">Aventura Divertida!</span></h2>
+                    <p class="description-learn-more">Nossa missão é transformar a limpeza das praias em uma aventura divertida e educativa para as crianças. Nos eventos de coleta, cada criança recebe um kit com luvas e sacos de lixo. À medida que coletam o lixo, elas acumulam pontos que podem ser trocados por brinquedos, jogos e outras surpresas incríveis. Além da diversão, as crianças aprendem sobre reciclagem e a importância de cuidar do meio ambiente. Junte-se a nós para manter nossas praias limpas e cheias de vida enquanto se diverte!</p>
+                    <a 
+                        class="btn-learn-more"
+                        type="button">
+                        Entre em Contato
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
