@@ -27,10 +27,14 @@ p {
     font-size: var(--body);
 }
 
-.color-orange {
+.color-purple {
     color: var(--secondary-color);
 }
 
 .color-cian {
     color: var(--tertiary-color);
+}
+
+.bold {
+    font-weight: 700;
 }
