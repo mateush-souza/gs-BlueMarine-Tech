@@ -21,7 +21,7 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Brindes</a></li>
+                    <li class="nav-item"><a href="#awards" class="nav-link">Brindes</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Membros</a></li>
@@ -45,18 +45,19 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Brindes</a></li>
+                <li class="nav-item"><a href="#awards" class="nav-link">Brindes</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Membros</a></li>
             </ul>
         </div>
     </header>
+
     <main>
         <section class="home">
             <div class="text-container-home">
-                <h1 class="title-home">Junte-se à Aventura do <span class="color-orange">Planeta Limpo!</span></h1>
-                <h3 class="auxiliary-text-home">Participe da Missão: <span class="color-orange">Coleta de Lixo nas Praias!</span></h3>
+                <h1 class="title-home">Junte-se à Aventura do <span class="color-purple">Planeta Limpo!</span></h1>
+                <h3 class="auxiliary-text-home">Participe da Missão: <span class="color-purple">Coleta de Lixo nas Praias!</span></h3>
                 <p class="description-home">Hey, pequenos heróis! Que tal salvar nossas praias e ganhar prêmios incríveis ao  mesmo tempo?</p>
                 <a type="button" class="btn-home">
                     Quero participar!
@@ -81,7 +82,7 @@
             </div>
         </section>
 
-        <section id="about-us" class="learn-more">
+        <section class="learn-more">
             <div class="container-learn-more">
                 <div class="image-container-learn-more">
                     <img
@@ -98,9 +99,74 @@
                     <p class="description-learn-more">Nossa missão é transformar a limpeza das praias em uma aventura divertida e educativa para as crianças. Nos eventos de coleta, cada criança recebe um kit com luvas e sacos de lixo. À medida que coletam o lixo, elas acumulam pontos que podem ser trocados por brinquedos, jogos e outras surpresas incríveis. Além da diversão, as crianças aprendem sobre reciclagem e a importância de cuidar do meio ambiente. Junte-se a nós para manter nossas praias limpas e cheias de vida enquanto se diverte!</p>
                     <a 
                         class="btn-learn-more"
-                        type="button">
+                        type="button"
+                    >
                         Entre em Contato
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="about-us">
+            <h2 class="title-about-us">Conheça mais sobre o <span class="color-purple">projeto!</span></h2>
+            <div class="iframe-about-us">
+                <div class="icons-about-us">
+                    <img
+                        class="img-about-us" 
+                        src="./assets/images/bubbles-about-us.png" 
+                        alt="Bolhas de cores laranjas e cianos" 
+                        width="1325px"
+                        height="719px"
+                        loading="lazy"
+                    />
+                </div>
+                <iframe 
+                    width="900" 
+                    height="620" 
+                    src="https://www.youtube.com/embed/Ws3Y2Rm-pMk?si=DecUHchFEkPXC0xJ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                >
+                </iframe>
+            </div>
+            <p class="description-about-us">*Vídeo produzido por membros do grupo</p>
+        </section>
+        <section id="awards" class="awards">
+            <div class="image-container">
+                <img
+                    class="fish-orange" 
+                    src="./assets/images/fish.png" 
+                    alt="Peixe laranja"
+                    width="550px"
+                    height="auto"
+                    loading="lazy"
+                />
+            </div>
+            <h2 class="title-awards">
+                <span class="small-title">Colete Pontos e troque por </span> Brindes Exclusivos
+            </h2>
+            <div class="container-awards">
+                <img
+                    id="image-change"
+                    class="timeline-awards" 
+                    src="./assets/images/timeline-awards.png" 
+                    alt="Linha laranja com números indo de 1 á 3"
+                    width="100%"
+                    height="auto"
+                />
+                <div class="text-container-awards">
+                    <p id="one" class="description-awards"><span class="bold">Coletar Lixo: </span>Participe dos eventos de coleta de lixo nas praias e acumule pontos para cada saco de lixo coletado. Quanto mais você coletar, mais pontos você ganha!</p>
+                    <p id="two" class="description-awards"><span class="bold">Acumular Pontos:</span>Cada tipo de lixo coletado vale uma certa quantidade de pontos. Plásticos, papéis, metais e vidros têm valores diferentes. Você pode acompanhar seus pontos em nosso portal</p>
+                    <p id="tree" class="description-awards"><span class="bold">Trocar por Brindes: </span>Com os pontos acumulados, você pode escolher entre uma variedade de prêmios. Como por exemplo:<br>
+                        - Aulas de surf <br>
+                        - Chaveiros personalizado<br>
+                        - Brinquedos Exclusivos<br>
+                        - Descontos em lojas Parceiras<br>
+                        Entre outras coisas!
+                    </p>
                 </div>
             </div>
         </section>
