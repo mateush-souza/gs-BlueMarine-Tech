@@ -50,7 +50,7 @@
     display: none;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1140px) {
     .nav-bar {
         position: fixed;
         top: 0;

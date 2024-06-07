@@ -82,7 +82,7 @@
 }
 
 .img-learn-more {
-    width: 90%;
+    max-width: 90%;
 }
 
 .text-container-learn-more {
@@ -210,10 +210,10 @@ iframe {
 .image-container {
     position: absolute;
     z-index: 1;
-   left: 0;
-   display: flex;
-   margin-bottom: 1100px;
-   width: auto;
+    left: 0;
+    display: flex;
+    margin-bottom: 1100px;
+    width: auto;
 }
 
 .title-awards {
@@ -326,3 +326,227 @@ iframe {
         margin: 0;
     }
 }
+
+/* Css utilizado na sessão contato */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;
+    padding: 77px;
+    min-height: 1064px;
+    background-image: url('/assets/images/background-contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-items-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container-contact {
+    display: flex;
+    margin-right: 60px;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    color: var(--light-color);
+}
+
+.title-contact {
+    margin-bottom: 25px;
+}
+
+.form-container-contact {
+    width: 50%;
+}
+
+.form-contact {
+    width: 100%;
+    padding: 71px;
+    margin-left: 20px;
+    border-radius: 80px;
+    background-color: rgba(255, 255, 255, 0.34);
+    box-shadow: 20px;
+    backdrop-filter: blur(10px);
+    max-width: 850px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-form-contact {
+    font-weight: 400;
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+label {
+    color: var(--light-color);
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    cursor: url('/assets/images/pointer.cur');
+    color: var(--light-color);
+    padding: 20px;
+    background-color: #9cd5e6ac;
+    height: 65px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-contact {
+    color: var(--light-color);
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: var(--subtitle);
+    background-color: #9cd5e6ac;
+    max-width: 110px;
+    min-height: 57px;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-items-contact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text-container-contact {
+        text-align: center;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .form-container-contact {
+        width: 100%;
+    }
+
+    .form-contact {
+        padding: 30px;
+        margin-left: 0;
+    }
+}
+
+/* Css utilizado na sessão de membros */
+
+.members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 980px;
+    background-color: var(--secondary-color);
+}
+
+.title-container {
+    display: flex;
+}
+
+.title-members {
+    padding: 20px 0 100px;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.container-items-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container-members {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cards {
+    margin-right: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    max-width: 500px;
+    height: auto;
+}
+
+.image-container-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.description-cards {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.btn-container-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.github-btn {
+    border-radius: 15px;
+    font-size: var(--body);
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 59px;
+    background-color: var(--tertiary-color);
+}
+
+.linkedin-btn {
+    border-radius: 15px;
+    font-size: var(--body);
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 59px;
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 1100px) {
+    .cards-container-members {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+        justify-content: center;
+        
+    }
+
+    .cards {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cards {
+        width: min-content;
+        padding: 5px;
+    }
+    
+}
+
+/* Css utilizado na sessão do footer */
+
+

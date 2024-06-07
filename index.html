@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,46 +10,56 @@
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/variables.css">
     <script src="assets/js/menu.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "077e3fd0-e316-47b5-b400-59ce635a3bd2", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "a60974e2-ae9c-4c92-b53f-af031624f3ff", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
     <title>BlueMarine Tech</title>
 </head>
+
 <body>
     <!-- menu desktop -->
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <h3>LOGO</h3>
+                <h3>BlueMarine</h3>
             </div>
             <div class="nav-list">
                 <ul>
+                    <li class="nav-item"><a href="#events" class="nav-link">Eventos</a></li>
                     <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
                     <li class="nav-item"><a href="#awards" class="nav-link">Brindes</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Membros</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#members" class="nav-link">Membros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                 </ul>
             </div>
-            
+
             <!-- menu mobile -->
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()">
-                    <img 
-                        class="icon" 
-                        src="assets/images/menu.svg" 
-                        alt="Ícone de menu Hamburguer"
-                        width="36px"
-                        height="36px"
-                        loading="lazy"
-                    />
+                    <img class="icon" src="assets/images/menu.svg" alt="Ícone de menu Hamburguer" width="36px"
+                        height="36px" loading="lazy" />
                 </button>
             </div>
         </nav>
         <div class="mobile-menu">
             <ul>
+                <li class="nav-item"><a href="#events" class="nav-link">Eventos</a></li>
                 <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
                 <li class="nav-item"><a href="#awards" class="nav-link">Brindes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Localizar lixeiras</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Membros</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#memebers" class="nav-link">Membros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
             </ul>
         </div>
     </header>
@@ -57,50 +68,38 @@
         <section class="home">
             <div class="text-container-home">
                 <h1 class="title-home">Junte-se à Aventura do <span class="color-purple">Planeta Limpo!</span></h1>
-                <h3 class="auxiliary-text-home">Participe da Missão: <span class="color-purple">Coleta de Lixo nas Praias!</span></h3>
-                <p class="description-home">Hey, pequenos heróis! Que tal salvar nossas praias e ganhar prêmios incríveis ao  mesmo tempo?</p>
+                <h3 class="auxiliary-text-home">Participe da Missão: <span class="color-purple">Coleta de Lixo nas
+                        Praias!</span></h3>
+                <p class="description-home">Hey, pequenos heróis! Que tal salvar nossas praias e ganhar prêmios
+                    incríveis ao mesmo tempo?</p>
                 <a type="button" class="btn-home">
                     Quero participar!
-                    <img 
-                        src="./assets/images/star-home.svg" 
-                        alt="Ícone de estrela"
-                        width="35px"
-                        height="30px"
-                        loading="lazy"
-                    />
+                    <img src="./assets/images/star-home.svg" alt="Ícone de estrela" width="35px" height="30px"
+                        loading="lazy" />
                 </a>
             </div>
             <div class="image-container-home">
-                <img
-                    class="img-home"
-                    src="./assets/images/boy-home.png" 
-                    alt="Garoto segurando um controle com animais marinhos em volta dele"
-                    width="600px"
-                    height="700px"
-                    loading="lazy"
-                />
+                <img class="img-home" src="./assets/images/boy-home.png"
+                    alt="Garoto segurando um controle com animais marinhos em volta dele" loading="lazy" />
             </div>
         </section>
 
-        <section class="learn-more">
+        <section id="events" class="learn-more">
             <div class="container-learn-more">
                 <div class="image-container-learn-more">
-                    <img
-                        class="img-learn-more"
-                        src="./assets/images/kids-learn-more.png" 
-                        alt="crianças correndo na praia"
-                        width="724px"
-                        height="696px"
-                        loading="lazy"
-                    />
+                    <img class="img-learn-more" src="./assets/images/kids-learn-more.png"
+                        alt="crianças correndo na praia" width="724px" height="696px" loading="lazy" />
                 </div>
                 <div class="text-container-learn-more">
-                    <h2 class="title-learn-more">Transforme a Limpeza das Praias em Uma <span class="color-cian">Aventura Divertida!</span></h2>
-                    <p class="description-learn-more">Nossa missão é transformar a limpeza das praias em uma aventura divertida e educativa para as crianças. Nos eventos de coleta, cada criança recebe um kit com luvas e sacos de lixo. À medida que coletam o lixo, elas acumulam pontos que podem ser trocados por brinquedos, jogos e outras surpresas incríveis. Além da diversão, as crianças aprendem sobre reciclagem e a importância de cuidar do meio ambiente. Junte-se a nós para manter nossas praias limpas e cheias de vida enquanto se diverte!</p>
-                    <a 
-                        class="btn-learn-more"
-                        type="button"
-                    >
+                    <h2 class="title-learn-more">Transforme a Limpeza das Praias em Uma <span
+                            class="color-cian">Aventura Divertida!</span></h2>
+                    <p class="description-learn-more">Nossa missão é transformar a limpeza das praias em uma aventura
+                        divertida e educativa para as crianças. Nos eventos de coleta, cada criança recebe um kit com
+                        luvas e sacos de lixo. À medida que coletam o lixo, elas acumulam pontos que podem ser trocados
+                        por brinquedos, jogos e outras surpresas incríveis. Além da diversão, as crianças aprendem sobre
+                        reciclagem e a importância de cuidar do meio ambiente. Junte-se a nós para manter nossas praias
+                        limpas e cheias de vida enquanto se diverte!</p>
+                    <a class="btn-learn-more" type="button">
                         Entre em Contato
                     </a>
                 </div>
@@ -111,56 +110,38 @@
             <h2 class="title-about-us">Conheça mais sobre o <span class="color-purple">projeto!</span></h2>
             <div class="iframe-about-us">
                 <div class="icons-about-us">
-                    <img
-                        class="img-about-us" 
-                        src="./assets/images/bubbles-about-us.png" 
-                        alt="Bolhas de cores laranjas e cianos" 
-                        width="1325px"
-                        height="719px"
-                        loading="lazy"
-                    />
+                    <img class="img-about-us" src="./assets/images/bubbles-about-us.png"
+                        alt="Bolhas de cores laranjas e cianos" width="1325px" height="719px" loading="lazy" />
                 </div>
-                <iframe 
-                    width="900" 
-                    height="620" 
-                    src="https://www.youtube.com/embed/Ws3Y2Rm-pMk?si=DecUHchFEkPXC0xJ" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen
-                >
+                <iframe width="900" height="620" src="https://www.youtube.com/embed/Ws3Y2Rm-pMk?si=DecUHchFEkPXC0xJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
             <p class="description-about-us">*Vídeo produzido por membros do grupo</p>
         </section>
+
         <section id="awards" class="awards">
             <div class="image-container">
-                <img
-                    class="fish-orange" 
-                    src="./assets/images/fish.png" 
-                    alt="Peixe laranja"
-                    width="550px"
-                    height="auto"
-                    loading="lazy"
-                />
+                <img class="fish-orange" src="./assets/images/fish.png" alt="Peixe laranja" width="550px" height="auto"
+                    loading="lazy" />
             </div>
             <h2 class="title-awards">
                 <span class="small-title">Colete Pontos e troque por </span> Brindes Exclusivos
             </h2>
             <div class="container-awards">
-                <img
-                    id="image-change"
-                    class="timeline-awards" 
-                    src="./assets/images/timeline-awards.png" 
-                    alt="Linha laranja com números indo de 1 á 3"
-                    width="100%"
-                    height="auto"
-                />
+                <img id="image-change" class="timeline-awards" src="./assets/images/timeline-awards.png"
+                    alt="Linha laranja com números indo de 1 á 3" width="100%" height="auto" />
                 <div class="text-container-awards">
-                    <p id="one" class="description-awards"><span class="bold">Coletar Lixo: </span>Participe dos eventos de coleta de lixo nas praias e acumule pontos para cada saco de lixo coletado. Quanto mais você coletar, mais pontos você ganha!</p>
-                    <p id="two" class="description-awards"><span class="bold">Acumular Pontos:</span>Cada tipo de lixo coletado vale uma certa quantidade de pontos. Plásticos, papéis, metais e vidros têm valores diferentes. Você pode acompanhar seus pontos em nosso portal</p>
-                    <p id="tree" class="description-awards"><span class="bold">Trocar por Brindes: </span>Com os pontos acumulados, você pode escolher entre uma variedade de prêmios. Como por exemplo:<br>
+                    <p id="one" class="description-awards"><span class="bold">Coletar Lixo: </span>Participe dos eventos
+                        de coleta de lixo nas praias e acumule pontos para cada saco de lixo coletado. Quanto mais você
+                        coletar, mais pontos você ganha!</p>
+                    <p id="two" class="description-awards"><span class="bold">Acumular Pontos:</span>Cada tipo de lixo
+                        coletado vale uma certa quantidade de pontos. Plásticos, papéis, metais e vidros têm valores
+                        diferentes. Você pode acompanhar seus pontos em nosso portal</p>
+                    <p id="tree" class="description-awards"><span class="bold">Trocar por Brindes: </span>Com os pontos
+                        acumulados, você pode escolher entre uma variedade de prêmios. Como por exemplo:<br>
                         - Aulas de surf <br>
                         - Chaveiros personalizado<br>
                         - Brinquedos Exclusivos<br>
@@ -170,6 +151,114 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="contact">
+            <div class="container-items-contact">
+                <div class="text-container-contact">
+                    <h2 class="title-contact">Fale Conosco</h2>
+                    <p class="description-container">
+                        Tem alguma dúvida ou quer saber mais sobre a nossa missão? Estamos aqui para ajudar!<br><br>
+                        Entre em contato conosco e vamos juntos tornar nossas praias mais limpas e bonitas.<br><br>
+                        Email: seuemail@dominio.com<br><br>
+                        Telefone: (XX) XXXX-XXXX<br><br>
+                        Ou preencha o formulário ao lado e responderemos o mais rápido possível.
+                    </p>
+                </div>
+                <div class="form-container-contact">
+                    <form class="form-contact" action="javascript:;" method="post">
+                        <h3 class="title-form-contact">Entre em Contato</h3>
+                        <label for="name">Nome Completo: </label>
+                        <input type="name" name="Nome Completo">
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+
+                        <label for="message">Insira sua mensagem: </label>
+                        <input type="textarea" name="message">
+
+                            <button class="btn-contact" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="members">
+            <div class="text-container-members">
+                <h2 class="title-members">Conheça os nossos Membros</h2>     
+            </div>
+            <div class="cards-container-members">
+                <div class="cards">
+                    <img 
+                        src="/assets/images/elipse.svg" 
+                        alt="Circulo laranja" 
+                        width="48px" 
+                        height="45px"
+                    />
+                    <div class="image-container-cards">
+                        <img 
+                            src="/assets/images/cauan.png" 
+                            alt="Foto do membro do time Mateus" 
+                            width="216px" 
+                            height="216px"
+                        />
+                    </div>
+                    <p class="description-cards">Olá me chamo Cauan Eu contribuí com a parte x e y do projeto, estamos muito empolgado com a ideia</p>
+                    <div class="btn-container-cards">
+                        <a class="github-btn" href="">Github</a>
+                        <a class="linkedin-btn" href="">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="/assets/images/elipse.svg" alt="Circulo laranja" width="48" height="45">
+                    <div class="image-container-cards">
+                        <img 
+                            src="/assets/images/mateus.png" 
+                            alt="Foto do membro do time Mateus" 
+                            width="216px" 
+                            height="216px"
+                        />
+                    </div>
+                    <p class="description-cards">Olá me chamo Mateus Eu contribuí com a parte x e y do projeto, estamos muito empolgado com a ideia</p>
+                    <div class="btn-container-cards">
+                        <a class="github-btn" href="">Github</a>
+                        <a class="linkedin-btn" href="">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img 
+                        src="/assets/images/elipse.svg" 
+                        alt="Circulo laranja" 
+                        width="48px" 
+                        height="45px"
+                    />
+                    <div class="image-container-cards">
+                        <img 
+                            src="/assets/images/lucas.png" 
+                            alt="Foto do membro do time Mateus" 
+                            width="216px" 
+                            height="216px"
+                        />
+                    </div>
+                    <p class="description-cards">Olá me chamo Lucas Eu contribuí com a parte x e y do projeto, estamos muito empolgado com a ideia</p>
+                    <div class="btn-container-cards">
+                        <a class="github-btn" href="">Github</a>
+                        <a class="linkedin-btn" href="">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <img src="/assets/images/footer-image.png" alt="bolhas do footer">
+        <p>Olá amigos, espero que tenham gostado do projeto,vamos deixar abaixo as nossas redes sociais, e outros meios de contato. Obrigado!</p>
+        <p>Contato: Email: contato@planetalimpo.com Telefone: (XX) XXXX-XXXX Endereço: Rua das Ondas, 123, Praia Feliz, FL 45678-000</p>
+        <p>Siga-nos:
+            <a href="">Facebook |</a>
+            <a href="">Instagram |</a></p>
+            <p> &copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
+
 </html>
