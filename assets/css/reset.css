@@ -4,12 +4,12 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     list-style: none;
     border: none;
 }
-
 
 h1 {
     font-size: var(--heading-xl);

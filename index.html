@@ -10,19 +10,7 @@
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/variables.css">
     <script src="assets/js/menu.js"></script>
-    <script>
-        window.watsonAssistantChatOptions = {
-          integrationID: "077e3fd0-e316-47b5-b400-59ce635a3bd2", // The ID of this integration.
-          region: "au-syd", // The region your integration is hosted in.
-          serviceInstanceID: "a60974e2-ae9c-4c92-b53f-af031624f3ff", // The ID of your service instance.
-          onLoad: async (instance) => { await instance.render(); }
-        };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-          document.head.appendChild(t);
-        });
-      </script>
+    <script src="/assets/js/chatbot.js"></script>
     <title>BlueMarine Tech</title>
 </head>
 
@@ -40,7 +28,7 @@
                     <li class="nav-item"><a href="#awards" class="nav-link">Brindes</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
                     <li class="nav-item"><a href="#members" class="nav-link">Membros</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="/blog.html" class="nav-link">Blog</a></li>
                 </ul>
             </div>
 
@@ -58,8 +46,8 @@
                 <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
                 <li class="nav-item"><a href="#awards" class="nav-link">Brindes</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
-                <li class="nav-item"><a href="#memebers" class="nav-link">Membros</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#members" class="nav-link">Membros</a></li>
+                <li class="nav-item"><a href="/blog.html" class="nav-link">Blog</a></li>
             </ul>
         </div>
     </header>
@@ -72,7 +60,7 @@
                         Praias!</span></h3>
                 <p class="description-home">Hey, pequenos heróis! Que tal salvar nossas praias e ganhar prêmios
                     incríveis ao mesmo tempo?</p>
-                <a type="button" class="btn-home">
+                <a href="#contact" class="btn-home">
                     Quero participar!
                     <img src="./assets/images/star-home.svg" alt="Ícone de estrela" width="35px" height="30px"
                         loading="lazy" />
@@ -99,7 +87,7 @@
                         por brinquedos, jogos e outras surpresas incríveis. Além da diversão, as crianças aprendem sobre
                         reciclagem e a importância de cuidar do meio ambiente. Junte-se a nós para manter nossas praias
                         limpas e cheias de vida enquanto se diverte!</p>
-                    <a class="btn-learn-more" type="button">
+                    <a class="btn-learn-more" href="#contact">
                         Entre em Contato
                     </a>
                 </div>
@@ -218,10 +206,10 @@
                             height="216px"
                         />
                     </div>
-                    <p class="description-cards">Olá me chamo Mateus Eu contribuí com a parte x e y do projeto, estamos muito empolgado com a ideia</p>
+                    <p class="description-cards">Olá me chamo Mateus Eu contribuí com a parte de front-end e Software Design do projeto, estamos muito empolgado com a ideia</p>
                     <div class="btn-container-cards">
-                        <a class="github-btn" href="">Github</a>
-                        <a class="linkedin-btn" href="">LinkedIn</a>
+                        <a class="github-btn" href="https://github.com/mateush-souza">Github</a>
+                        <a class="linkedin-btn" href="https://www.linkedin.com/in/mateus-henrique-525497268/">LinkedIn</a>
                     </div>
                 </div>
                 <div class="cards">
@@ -250,13 +238,17 @@
     </main>
 
     <footer class="footer">
-        <img src="/assets/images/footer-image.png" alt="bolhas do footer">
-        <p>Olá amigos, espero que tenham gostado do projeto,vamos deixar abaixo as nossas redes sociais, e outros meios de contato. Obrigado!</p>
-        <p>Contato: Email: contato@planetalimpo.com Telefone: (XX) XXXX-XXXX Endereço: Rua das Ondas, 123, Praia Feliz, FL 45678-000</p>
-        <p>Siga-nos:
-            <a href="">Facebook |</a>
-            <a href="">Instagram |</a></p>
-            <p> &copy; 2024 - Todos os direitos reservados</p>
+        <div class="text-container-footer">
+            <p class="bold">Olá amigos, espero que tenham gostado do projeto,vamos deixar abaixo as nossas redes sociais, e outros meios de contato. Obrigado!</p>
+            <p>Contato: Email: contato@planetalimpo.com Telefone: (XX) XXXX-XXXX Endereço: Rua das Ondas, 123, Praia Feliz, FL 45678-000</p>
+            <p>Siga-nos:
+                <a href="">Facebook |</a>
+                <a href="">Instagram |</a></p>
+                <p> &copy; 2024 - Todos os direitos reservados</p>
+            </div>
+            <div class="image-container-footer">
+                <img class="circles-footer" src="/assets/images/footer-image.png" alt="bolhas do footer">
+            </div>
         </div>
     </footer>
 </body>

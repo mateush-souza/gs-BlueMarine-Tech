@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Simples</title>
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/variables.css">
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/chatbot.js"></script>
+</head>
+<body> 
+     <!-- menu desktop -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h3>BlueMarine</h3>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/index.html#events" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="/index.html#about-us" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="/index.html#awards" class="nav-link">Brindes</a></li>
+                    <li class="nav-item"><a href="/index.html#contact" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="/index.html#members" class="nav-link">Membros</a></li>
+                    <li class="nav-item"><a href="/blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- menu mobile -->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="assets/images/menu.svg" alt="Ícone de menu Hamburguer" width="36px"
+                        height="36px" loading="lazy" />
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/index.html#events" class="nav-link">Eventos</a></li>
+                <li class="nav-item"><a href="/index.html#about-us" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="/index.html#awards" class="nav-link">Brindes</a></li>
+                <li class="nav-item"><a href="/index.html#contact" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="/index.html#members" class="nav-link">Membros</a></li>
+                <li class="nav-item"><a href="/blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="btn-sections">
+            <ul class="container-btn">
+                <li class="btn-alternative"><a href="#" onclick="toggleSection('educativo')">Sessão Educativa</a></li>
+                <li class="btn-alternative"><a href="#" onclick="toggleSection('geral')">Sessão Geral</a></li>
+            </ul>
+        </section>
+
+        <section id="educativo">
+            <h2 class="title">Sessão Educativa</h2>
+            <div class="post-container" id="educativo-posts">
+            </div>
+            <div class="post-form">
+                <h3 class="subtitle">Adicionar Post Educativo</h3>
+                <textarea id="educativo-post-text" placeholder="Escreva seu post aqui..."></textarea>
+                <input type="file" id="educativo-post-media" accept="image/*,video/*">
+                <button onclick="addPost('educativo')">Postar</button>
+            </div>
+        </section>
+
+        <section id="geral" class="section-hidden">
+            <h2 class="title">Sessão Geral</h2>
+            <div class="post-container" id="geral-posts">
+            </div>
+            <div class="post-form">
+                <h3 class="subtitle">Adicionar Post Geral</h3>
+                <textarea id="geral-post-text" placeholder="Escreva seu post aqui..."></textarea>
+                <input type="file" id="geral-post-media" accept="image/*,video/*">
+                <button onclick="addPost('geral')">Postar</button>
+            </div>
+        </section>
+    </main>
+    <script src="/assets/js/blog.js"></script>
+</body>
+</html>
