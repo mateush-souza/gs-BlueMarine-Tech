@@ -1,0 +1,9 @@
+---1TDSPI
+
+Integrantes:
+-Mateus Henrique de Souza
+-Cauan Aranega Passos
+-Lucas de Assis Fialho
+
+Link Github:
+https://github.com/mateush-souza/gs-BlueMarine-Tech
